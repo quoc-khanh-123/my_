@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Boot cơ bản với Java - My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="post-detail">
+            <h1>Spring Boot cơ bản với Java</h1>
+            <p><small>Ngày đăng: 29/12/2025</small></p>
+
+            <p>Spring Boot giúp tạo ứng dụng Java nhanh chóng, đặc biệt là REST API.</p>
+
+            <h2>Tạo REST Controller</h2>
+            <pre><code>@RestController
+@RequestMapping("/api")
+public class UserController {
+
+    @GetMapping("/hello")
+    public String hello() {
+        return "Xin chào Spring Boot!";
+    }
+}</code></pre>
+
+            <p>Chạy ứng dụng → truy cập http://localhost:8080/api/hello</p>
+
+            <p>Ưu điểm: Tự động cấu hình, ít boilerplate code.</p>
+
+            <a href="blog.html" class="back">← Quay lại danh sách bài viết</a>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>

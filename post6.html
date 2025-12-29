@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation với JavaScript - My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="post-detail">
+            <h1>DOM Manipulation với JavaScript</h1>
+            <p><small>Ngày đăng: 29/12/2025</small></p>
+
+            <p>DOM cho phép JavaScript thay đổi nội dung, cấu trúc và kiểu dáng trang web động.</p>
+
+            <h2>Truy cập element</h2>
+            <pre><code>let title = document.getElementById('title');
+let items = document.querySelectorAll('.item');</code></pre>
+
+            <h2>Tạo và thêm element</h2>
+            <pre><code>let newP = document.createElement('p');
+newP.textContent = "Đoạn văn mới";
+document.body.appendChild(newP);</code></pre>
+
+            <a href="blog.html" class="back">← Quay lại danh sách bài viết</a>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>

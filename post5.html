@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xử lý exception trong Java - My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="post-detail">
+            <h1>Xử lý exception trong Java</h1>
+            <p><small>Ngày đăng: 29/12/2025</small></p>
+
+            <p>Java cung cấp cơ chế try-catch-finally để xử lý exception an toàn.</p>
+
+            <h2>Cú pháp try-catch</h2>
+            <pre><code>try {
+    int result = 10 / 0;
+} catch (ArithmeticException e) {
+    System.out.println("Lỗi chia cho 0: " + e.getMessage());
+} finally {
+    System.out.println("Khối finally luôn chạy");
+}</code></pre>
+
+            <p>Lợi ích: Chương trình không crash, người dùng nhận thông báo thân thiện.</p>
+
+            <a href="blog.html" class="back">← Quay lại danh sách bài viết</a>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>

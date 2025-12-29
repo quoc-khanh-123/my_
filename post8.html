@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API trong JavaScript - My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="post-detail">
+            <h1>Fetch API trong JavaScript</h1>
+            <p><small>Ngày đăng: 29/12/2025</small></p>
+
+            <p>Fetch API là cách hiện đại để gọi API và lấy dữ liệu từ server.</p>
+
+            <h2>Gọi GET</h2>
+            <pre><code>fetch('https://api.example.com/users')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Lỗi:', error));</code></pre>
+
+            <p>Dễ dùng, hỗ trợ Promise và async/await.</p>
+
+            <a href="blog.html" class="back">← Quay lại danh sách bài viết</a>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu trúc dữ liệu trong JavaScript - My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="post-detail">
+            <h1>Cấu trúc dữ liệu trong JavaScript</h1>
+            <p><small>Ngày đăng: 29/12/2025</small></p>
+
+            <p>JavaScript cung cấp nhiều cấu trúc dữ liệu mạnh mẽ để lưu trữ và quản lý dữ liệu. Trong bài này, chúng ta sẽ tìm hiểu về Array, Object và Map – ba cấu trúc phổ biến nhất.</p>
+
+            <h2>1. Array (Mảng)</h2>
+            <p>Array dùng để lưu trữ danh sách các phần tử có thứ tự.</p>
+            <pre><code>let fruits = ["Táo", "Chuối", "Cam"];
+console.log(fruits[0]); // Output: Táo
+
+fruits.push("Xoài");
+console.log(fruits); // ["Táo", "Chuối", "Cam", "Xoài"]</code></pre>
+
+            <h2>2. Object (Đối tượng)</h2>
+            <pre><code>let person = {
+    name: "Nguyễn Văn A",
+    age: 25,
+    job: "Lập trình viên"
+};
+
+console.log(person.name); // Nguyễn Văn A
+person.age = 26;</code></pre>
+
+            <h2>3. Map</h2>
+            <pre><code>let myMap = new Map();
+myMap.set("name", "Nguyễn Văn A");
+myMap.set(1, "Số một");
+
+console.log(myMap.get("name")); // Nguyễn Văn A</code></pre>
+
+            <a href="blog.html" class="back">← Quay lại danh sách bài viết</a>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>

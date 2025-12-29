@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multithreading trong Java - My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="post-detail">
+            <h1>Multithreading trong Java</h1>
+            <p><small>Ngày đăng: 29/12/2025</small></p>
+
+            <p>Multithreading cho phép chạy nhiều luồng đồng thời.</p>
+
+            <h2>Cách implement Runnable</h2>
+            <pre><code>class MyRunnable implements Runnable {
+    public void run() {
+        System.out.println("Luồng đang chạy");
+    }
+}
+
+Thread t = new Thread(new MyRunnable());
+t.start();</code></pre>
+
+            <p>Lợi ích: Tăng tốc độ xử lý, phù hợp ứng dụng cần chạy song song.</p>
+
+            <a href="blog.html" class="back">← Quay lại danh sách bài viết</a>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>

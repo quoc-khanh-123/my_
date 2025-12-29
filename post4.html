@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async/Await trong JavaScript - My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="post-detail">
+            <h1>Async/Await trong JavaScript</h1>
+            <p><small>Ngày đăng: 29/12/2025</small></p>
+
+            <p>Async/Await là cú pháp hiện đại giúp xử lý bất đồng bộ dễ đọc hơn, thay thế cho Promise chain.</p>
+
+            <h2>Cú pháp</h2>
+            <pre><code>async function fetchData() {
+    try {
+        let response = await fetch('https://api.example.com/data');
+        let data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error('Lỗi:', error);
+    }
+}
+
+fetchData();</code></pre>
+
+            <p>Async/Await làm code trông giống đồng bộ, dễ xử lý lỗi với try-catch.</p>
+
+            <a href="blog.html" class="back">← Quay lại danh sách bài viết</a>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>

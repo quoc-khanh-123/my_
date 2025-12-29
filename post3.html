@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lập trình hàm trong Java - My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="post-detail">
+            <h1>Lập trình hàm trong Java (Lambda Expression)</h1>
+            <p><small>Ngày đăng: 29/12/2025</small></p>
+
+            <p>Lambda Expression được giới thiệu từ Java 8, giúp viết code ngắn gọn hơn khi làm việc với Functional Interface.</p>
+
+            <h2>Cú pháp cơ bản</h2>
+            <pre><code>Runnable r = () -> System.out.println("Hello Lambda!");
+new Thread(r).start();</code></pre>
+
+            <h2>Ví dụ với List và Stream</h2>
+            <pre><code>List<String> names = Arrays.asList("An", "Bình", "Cường");
+
+names.forEach(s -> System.out.println(s));</code></pre>
+
+            <p>Lợi ích: Code ngắn gọn, dễ đọc, hỗ trợ lập trình hàm mạnh mẽ.</p>
+
+            <a href="blog.html" class="back">← Quay lại danh sách bài viết</a>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
